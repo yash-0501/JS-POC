@@ -9,7 +9,7 @@
 // getName();
 // console.log(x);
 
-// Output: 
+// Output:
 // JS POC
 // 7
 
@@ -26,24 +26,20 @@
 //     console.log("JS POC");
 // }
 
-// Output: 
+// Output:
 // JS POC
 // undefined
 
-
 // ----------------------
-
 
 // getName();
 // console.log(x);
-
-
 
 // function getName(){
 //     console.log("JS POC");
 // }
 
-// Output: 
+// Output:
 // JS POC
 // Error x is not defined
 
@@ -70,13 +66,12 @@
 // ----- In case of Arrow Functions ------
 console.log(getName);
 
-var getName = () =>{
-    console.log("JS POC");
-}
+var getName = () => {
+  console.log('JS POC');
+};
 
 //Output: undefined
 
 // The getName behaves as a variable
 
 // --------- Hoisting -------
-

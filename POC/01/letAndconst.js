@@ -8,8 +8,6 @@
 // undefined
 // ReferenceError: Cannot access 'a' before initialization
 
-
-
 // let a = 10;
 
 // console.log(a);
@@ -18,13 +16,12 @@
 
 // 10
 
-
 // var b = 10;
 // console.log("B:",b);
 // var b = 100;
 // console.log("B:",b);
 
-// // 10 
+// // 10
 // // 100
 
 // let a = 10;
@@ -37,7 +34,6 @@
 // console.log(b);
 
 // 100
-
 
 // let a;
 // a = 10

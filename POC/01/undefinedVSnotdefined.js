@@ -3,7 +3,6 @@
 
 // output undefined
 
-
 // var a = 10;
 // console.log(a);
 
@@ -16,13 +15,12 @@ var a;
 console.log(a);
 // undefined
 
-a = 10
-if(a === undefined){
-    console.log("A is undefined")
-}else{
-    console.log("A is defined");
+a = 10;
+if (a === undefined) {
+  console.log('A is undefined');
+} else {
+  console.log('A is defined');
 }
-
 
 console.log(a);
 
@@ -30,18 +28,16 @@ console.log(a);
 // A is defined
 // 10
 
-
-
 var x;
 console.log(x);
 
-x = "Hello World"
+x = 'Hello World';
 console.log(x);
 
-x = 1001
+x = 1001;
 console.log(x);
 
-x = false
+x = false;
 console.log(x);
 
 // undefined
