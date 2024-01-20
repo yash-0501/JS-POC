@@ -1,7 +1,7 @@
 Foundation
 
 1. Foundation Javascript, async nature of JS
-2. Node.js and its runtime=
+2. Node.js and its runtime
 3. Databases (NoSQL/SQL)
 4. Mongo and Postgres deep dive
 5. Typescript beginner to advance
