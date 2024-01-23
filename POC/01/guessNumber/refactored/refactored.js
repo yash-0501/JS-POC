@@ -10,6 +10,7 @@ const NumberGuessingGame = (function () {
     let lMsg;
     let exitMsg;
     let winMsg;
+    let checkTryAgain = 0;
 
     let playCounter = 0;
     const maxIterations = 3;
@@ -40,9 +41,10 @@ const NumberGuessingGame = (function () {
         }
     
         if(check === 'y'){
-            game();
+            checkTryAgain = 1;
         }else{
             alert("Nikal!")
+            checkTryAgain = 0;
         }
     }
 
@@ -162,6 +164,8 @@ const NumberGuessingGame = (function () {
         }
 
         playCounter++;
+        
+
 
         let check = prompt("Do you want to create your own game or play default?\n\nPress 'Y' for Yes or 'N' for No.").toLowerCase();
 
@@ -177,7 +181,9 @@ const NumberGuessingGame = (function () {
 
         // setTimeout(function faltu(){
         // }, 0);
-
+        if(!checkTryAgain) return;
+        game();
+    
         
 
     }
