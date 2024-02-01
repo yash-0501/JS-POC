@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div>
+        <h1>Countdown Timer: <br> <span id="hh">00</span>:<span id="mm">00</span>:<span id="ss">00</span></h1>
+        <div id="input-time">
+            <label for="hours">Enter hours (0-24): </label>
+            <input type="number" id="hours" name="hours" min="0" max="24" value = 0 oninput="validateInput(this)">
+            <span id="error-message-hours" style="color: red;"></span>
+            <label for="minutes">Enter minutes (0-59): </label>
+            <input type="number" id="minutes" name="minutes" min="0" max="59" value = 0 oninput="validateInput(this)">
+            <span id="error-message-minutes" style="color: red;"></span>
+            <label for="seconds">Enter seconds (1-59): </label>
+            <input type="number" id="seconds" name="seconds" min="1" max="59" value = 0 oninput="validateInput(this)">
+            <span id="error-message-seconds" style="color: red;"></span>
+        </div>
+        <button type="button" id="timer-btn">START</button>
+        <button type="button" id="reset">RESET</button>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
