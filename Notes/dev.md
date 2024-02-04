@@ -1,9 +1,9 @@
 Foundation
 
 1. Foundation Javascript, async nature of JS -- done
-2. Node.js and its runtime
-3. Databases (NoSQL/SQL)
-4. Mongo and Postgres deep dive
+2. Node.js and its runtime -- done
+3. Databases (NoSQL/SQL) -- tbd
+4. Mongo and Postgres deep dive -- tbd
 5. Typescript beginner to advance
 6. Backend
 7. Backend communication protocols
