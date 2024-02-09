@@ -4,7 +4,7 @@ Foundation
 2. Node.js and its runtime -- done
 3. Databases (NoSQL/SQL) -- tbd
 4. Mongo and Postgres deep dive -- tbd
-5. Typescript beginner to advance
+5. Typescript beginner to advance -- done
 6. Backend
 7. Backend communication protocols
 8. Express basic to advance
