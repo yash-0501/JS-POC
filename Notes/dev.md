@@ -5,8 +5,8 @@ Foundation
 3. Databases (NoSQL/SQL) -- tbd
 4. Mongo and Postgres deep dive -- tbd
 5. Typescript beginner to advance -- done
-6. Backend
-7. Backend communication protocols
+6. Backend -- covered in 2 -- done 
+7. Backend communication protocols -- tbd
 8. Express basic to advance
 9. ORMs
 10. Middlewares, routes, status codes, global catches
