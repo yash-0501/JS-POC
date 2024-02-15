@@ -1,7 +1,43 @@
 import express from 'express';
 import fs from 'fs';
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
+
+const uri =
+  'mongodb+srv://yashagarwal:' +
+  process.env.mongopw +
+  '@mern-poc.rildjcz.mongodb.net/?retryWrites=true&w=majority';
+
+mongoose
+  .connect(uri)
+  .then(() => console.log('Mongo DB Connection established!'));
+
+// Schema
+const userSchema = new mongoose.Schema({
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  jobTitle: {
+    type: String,
+  },
+  gender: {
+    type: String,
+  },
+});
+
+const User = mongoose.model('user', userSchema);
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -18,6 +54,20 @@ type User = {
   gender: string;
   job_title?: string;
 };
+
+// Custom Middlewares
+
+// all routes
+app.use((req, res, next) => {
+  console.log('Middleware 1');
+  next();
+});
+
+// specific routes
+app.use('/api/users/:id', (req, res, next) => {
+  console.log('Request Type:', req.method);
+  next();
+});
 
 // HTML
 app.get('/users', (req, res) => {
@@ -48,7 +98,6 @@ app
       // User with the specified id was not found
       return res.status(404).json({ error: 'Invalid id' });
     }
-    console.log(user);
     return res.status(200).json(user);
   })
   .patch((req, res) => {
@@ -64,20 +113,18 @@ app
     const unexpectedFields = Object.keys(body).filter(
       (key) => !(key in users[userIndex]),
     );
-    
+
     if (unexpectedFields.length > 0) {
-      return res
-        .status(400)
-        .json({
-          error: `Unexpected fields in request body: ${unexpectedFields.join(
-            ', ',
-          )}`,
-        });
+      return res.status(400).json({
+        error: `Unexpected fields in request body: ${unexpectedFields.join(
+          ', ',
+        )}`,
+      });
     }
 
     // Check if 'id' field is included in the request body
     if ('id' in body) {
-        return res.status(400).json({ error: 'Cannot change user ID' });
+      return res.status(400).json({ error: 'Cannot change user ID' });
     }
 
     users[userIndex] = { ...users[userIndex], ...body };
@@ -103,21 +150,21 @@ app
     const userIndex = users.findIndex((user: User) => user.id === userId);
 
     if (userIndex === -1) {
-        return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({ error: 'User not found' });
     }
 
     // Remove the user from the users array
     users.splice(userIndex, 1);
 
     // Write users array to file
-    fs.writeFile("./data.json", JSON.stringify(users), (err) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ error: 'Failed to write to file' });
-        } else {
-            console.log('User deleted successfully');
-            return res.status(200).json({ status: 'User deleted successfully' });
-        }
+    fs.writeFile('./data.json', JSON.stringify(users), (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Failed to write to file' });
+      } else {
+        console.log('User deleted successfully');
+        return res.status(200).json({ status: 'User deleted successfully' });
+      }
     });
   });
 
@@ -136,14 +183,14 @@ app.post('/api/users', (req, res) => {
       .status(400)
       .json({ error: `Missing required fields: ${missingFields.join(', ')}` });
   }
-  const newUser: User = { ...body, id: users.length + 1 };
+  const newUser: User = { ...body, id: users[users.length - 1].id + 1 };
   users.push(newUser);
   fs.writeFile('./data.json', JSON.stringify(users), (err) => {
     if (err) {
       console.log(err);
       return res.status(400).json({ error: err });
     } else {
-      return res.status(200).json({ status: 'Success!', id: newUser.id });
+      return res.status(201).json({ status: 'Success!', id: newUser.id });
     }
   });
 });

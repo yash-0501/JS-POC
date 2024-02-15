@@ -1,15 +1,7 @@
 [
     {
-        "id": 2,
-        "first_name": "Paula",
-        "last_name": "Hinsche",
-        "email": "phinsche1@123-reg.co.uk",
-        "gender": "Female",
-        "job_title": "Safety Technician I"
-    },
-    {
         "id": 3,
-        "first_name": "Wadsworth",
+        "first_name": "Shasha",
         "last_name": "Bamlet",
         "email": "wbamlet2@gizmodo.com",
         "gender": "Male",
@@ -7984,11 +7976,27 @@
         "job_title": "Desktop Support Technician"
     },
     {
-        "id": 1000,
-        "first_name": "Emilee",
-        "last_name": "Bastick",
-        "email": "ebastickrr@sbwire.com",
-        "gender": "Female",
-        "job_title": "Account Representative II"
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "jd@gmail.com",
+        "gender": "Male",
+        "job_title": "Test user",
+        "id": 1001
+    },
+    {
+        "first_name": "John2",
+        "last_name": "Doe",
+        "email": "jd@gmail.com",
+        "gender": "Male",
+        "job_title": "Test user",
+        "id": 1002
+    },
+    {
+        "first_name": "Jhonny",
+        "last_name": "Doe",
+        "email": "jd@gmail.com",
+        "gender": "Male",
+        "job_title": "Test user",
+        "id": 1003
     }
 ]
