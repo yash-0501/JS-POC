@@ -1,0 +1,22 @@
+
+2/16/2024, 9:24:05 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:24:55 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:25:48 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:26:41 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:29:20 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:29:41 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:30:09 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:31:02 PM : ::ffff:127.0.0.1 : /api/users/ : GET
+2/16/2024, 9:31:08 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:31:28 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : PATCH
+2/16/2024, 9:31:42 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:31:48 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : PATCH
+2/16/2024, 9:31:56 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : PATCH
+2/16/2024, 9:32:02 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:32:49 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:32:57 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : PATCH
+2/16/2024, 9:33:03 PM : ::ffff:127.0.0.1 : /api/users/65ce2c41cecde506a060022f : GET
+2/16/2024, 9:33:10 PM : ::ffff:127.0.0.1 : /api/users : GET
+2/16/2024, 9:33:17 PM : ::ffff:127.0.0.1 : /api/users/65ce35f543a8578a833beda4 : DELETE
+2/16/2024, 9:34:17 PM : ::ffff:127.0.0.1 : /api/users/ : POST
+2/16/2024, 9:34:20 PM : ::ffff:127.0.0.1 : /api/users/ : POST
