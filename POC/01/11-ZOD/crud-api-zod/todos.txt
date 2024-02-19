@@ -1,0 +1,4 @@
+1. /todos - GET - show all
+2. /todos - POST - create
+3. /todos/id - PATCH  - update a particular todo
+4. /todos/id - DELETE - deletes a particular todo

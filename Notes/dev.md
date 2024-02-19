@@ -8,9 +8,9 @@ Foundation
 6. Backend -- covered in 2 -- done 
 7. Backend communication protocols -- tbd
 8. Express basic to advance -- done
-9. ORMs
+9. ORMs -- done (mongoose)
 10. Middlewares, routes, status codes, global catches -- done
-11. Zod
+11. Zod -- done
 12. MonoRepos, turborepo
 13. Serverless Backends
 14. OpenAPI Spec
