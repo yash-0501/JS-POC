@@ -1,0 +1,18 @@
+1 - npm i nodemon ts-node
+2 - touch nodemon.json 
+
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "ts",
+    "exec": "npm start"
+}
+  
+3 - Update scripts in package.json
+
+"start": "tsc && node dist/index.js",
+"dev": "nodemon"
+
+
+4 - Start using 'npm run dev'
