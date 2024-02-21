@@ -1,1 +1,1 @@
-npm install express mongoose zod typescript @types/express
+npm install express mongoose zod typescript @types/express nodemon

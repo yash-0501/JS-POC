@@ -1,4 +1,4 @@
-1 - npm i nodemon ts-node
+1 - npm i nodemon
 2 - touch nodemon.json 
 
 {
